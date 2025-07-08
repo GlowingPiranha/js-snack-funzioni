@@ -11,11 +11,12 @@ function primaLettera(array) {
     iniziale.push(names[i][0]);
   }
 
-  return iniziale;
+  console.log(iniziale)
+
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(primaLettera(names))
 
+primaLettera()
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
