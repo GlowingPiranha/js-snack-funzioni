@@ -4,22 +4,23 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function filtraPerLettera(array, letter) {
-  const filtered = []
+function filtered(array) {
 
-  for (let i = 0; i < names.length; i++) {
-    if (names[i][0].toLowerCase() === letter.toLowerCase());
-    filtered.push(names[i]);
+  const letter = "A";
+  const startsWith = [];
 
-    return filtered
+  for (let i = 0; i < array.length; i++) {
+    const foundName = array[i];
+    if (foundName[0] === letter) {
+      startsWith.push(foundName);
+    }
   }
-  console.log(filtered(names, `A`));
 
-}
-
+  return startsWith;
+};
 
 // Invoca la funzione qui e stampa il risultato in console
-filtraPerLettera()
 
+console.log(filtered(names));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
