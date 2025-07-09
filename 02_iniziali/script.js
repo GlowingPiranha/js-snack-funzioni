@@ -8,8 +8,7 @@ function primaLettera(array) {
   const primaLettera = [];
 
   for (let i = 0; i < array.length; i++) {
-    const name = array[i]
-    primaLettera.push(name[0]);
+    primaLettera.push(array[i][0]);
   }
   return primaLettera;
 

@@ -5,12 +5,12 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
-function greetings(text) {
-  console.log(`ciao` + ` ` + userName);
+function greetings(name) {
+  console.log(`ciao` + ` ` + name);
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-greetings()
+greetings(userName)
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
